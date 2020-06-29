@@ -6,7 +6,9 @@ class Ship:
         self.draft = draft
         self.crew = crew
     def is_worth_it(self):
-        print(self.draft - (1.5 * self.crew))
+        ourCalc = ((self.draft - (1.5 * self.crew)) >= 20)
+        print(ourCalc)
+        return ourCalc
 
 boat = Ship(15, 10)
 
